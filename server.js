@@ -3,5 +3,5 @@ var connect = require('connect'),
 
 var app = connect();
 
-app.use(serveStatic("platforms/browser/www"));
+app.use(serveStatic(__dirname));
 app.listen(process.env.PORT || 5000);
